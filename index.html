@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Timer Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <!-- Todo List -->
+        <div class="todo-list">
+            <h2>To-Do List</h2>
+            <ul id="tasks">
+                <!-- Tasks will be added here -->
+            </ul>
+            <input type="text" id="new-task" placeholder="Add a new task">
+            <button class="add-task-button" onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Timer -->
+        <div class="timer">
+            <h2>Timer</h2>
+            <div id="time">01:00</div>
+            <div class="timer-buttons">
+                <button onclick="startTimer()">Start</button>
+                <button onclick="stopTimer()">Stop</button>
+            </div>
+            <div class="timer-controls">
+                <button onclick="setTimer(60)">1m</button>
+                <button onclick="setTimer(300)">5m</button>
+                <button onclick="setTimer(600)">10m</button>
+                <button onclick="setTimer(1200)">20m</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- Custom Controls -->
+<div class="custom-audio-player container">
+    <button class="prev-btn">Prev</button>
+    <button class="play-pause-btn">Play Chill Music</button>
+    <button class="next-btn">Next</button>
+
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    
+</div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <audio id="audio-player" style="display: none;" controls>
+            <source src="https://res.cloudinary.com/usamobileappsllc/video/upload/v1641625633/aura-tatami-main-version-02-18-7741_pss8ik.mp3" type="audio/mp3">
+            <source src="https://res.cloudinary.com/usamobileappsllc/video/upload/v1641625535/cortado-92elm-main-version-02-02-18300_hgbjos.mp3" type="audio/mp">
+            <source src="https://res.cloudinary.com/usamobileappsllc/video/upload/v1641625210/toy-box-mountaineer-main-version-03-02-8474_zed4to.mp3" type="audio/mp3">
+            <source src="https://res.cloudinary.com/usamobileappsllc/video/upload/v1641625247/autumn-coffee-bosnow-main-version-02-16-8826_c3xonk.mp3" type="audio/mp3">
+            <source src="https://res.cloudinary.com/usamobileappsllc/video/upload/v1641625633/aura-tatami-main-version-02-18-7741_pss8ik.mp3" type="audio/mp3">
+            <source src="https://res.cloudinary.com/usamobileappsllc/video/upload/v1641625785/indigo-dreamin-prigida-main-version-01-48-7568_x81x5n.mp3" type="audio/mp3">
+            <source src="https://res.cloudinary.com/usamobileappsllc/video/upload/v1641626142/press-pause-walz-main-version-01-38-17207_wsa6ky.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
